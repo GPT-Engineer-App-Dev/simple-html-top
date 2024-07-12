@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { CircleUser, Menu, Package2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
+import Footer from "./footer";
 
 const Layout = () => {
   return (
@@ -23,6 +24,7 @@ const Layout = () => {
       <main className="flex-grow overflow-auto">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };
